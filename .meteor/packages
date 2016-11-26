@@ -33,4 +33,6 @@ meteorhacks:kadira
 fortawesome:fontawesome
 accounts-base
 aldeed:simple-schema
-
+mrgalaxy:stripe
+momentjs:moment
+random

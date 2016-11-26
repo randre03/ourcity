@@ -3,7 +3,7 @@
  */
  
 import React, { Component } from 'react';
-import Accounts from './Accounts';
+import Accounts from './signup/Accounts';
 import { Link, browserHistory } from 'react-router';
 
 class Header extends Component {

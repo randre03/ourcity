@@ -9,6 +9,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './components/App';
 import NoUser from './components/NoUser';
 import MapMain from './components/MapMain';
+import Signup from './components/signup/Signup';
 
 const routes = (
     <Router history={browserHistory}>
@@ -16,6 +17,7 @@ const routes = (
             <IndexRoute component={NoUser} />
             {/* /bins is a child route (since nested) which gets passed via props.children (see App.js)*/}
             <Route path="maps/:mapId" component={MapMain}/>
+            <Route path="signup" component={Signup}/>
         </Route>
     </Router>
 );

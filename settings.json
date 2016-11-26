@@ -1,0 +1,35 @@
+{
+  "public": {
+    "plans": [
+      {
+        "name": "City Plan",
+        "id": "city-plan",
+        "amount": {
+          "usd": "$50"
+        },
+        "interval": "yearly"
+      },
+      {
+        "name": "Jet Setter",
+        "amount": {
+          "usd": "$75"
+        },
+        "interval": "yearly"
+      }
+    ],
+    "stripe": {
+      "testPublishableKey": "pk_test_fMepouqO9AbNj1iXfOLEYFpr",
+      "livePublishableKey": "pk_live_QpDx7mi3dkTdvu8kjr74Bgrl"
+    }
+  },
+  "private": {
+    "stripe": {
+      "testSecretKey": "sk_test_z4UwQYhhBRkF55tWkbwvFHpk",
+      "liveSecretKey": "sk_live_GvfTDprz5D5eRssIJ2XAH27Y"
+    },
+    "kadira": {
+      "appId": "2ixw5eQ5DhGE7XSm6",
+      "appSecret": "0171c59c-65c9-4a77-96c6-581fdb355c57"
+    }
+  }
+}
