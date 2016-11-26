@@ -4,13 +4,22 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
-const App = () => {
-    return (
-        <h1>Hello there! This is my App.</h1>
-    );
-};
+import App from './components/App';
+import NoUser from './components/NoUser';
+import MapMain from './components/MapMain';
+
+const routes = (
+    <Router history={browserHistory}>
+        <Route path="/" component={App}>
+            <IndexRoute component={NoUser} />
+            {/* /bins is a child route (since nested) which gets passed via props.children (see App.js)*/}
+            <Route path="maps/:mapId" component={MapMain}/>
+        </Route>
+    </Router>
+);
 
 Meteor.startup(() => {
-    ReactDOM.render(<App />, document.querySelector('.render-target'));
+    ReactDOM.render(routes, document.querySelector('.render-target'));
 });
