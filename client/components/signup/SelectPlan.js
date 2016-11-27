@@ -7,13 +7,12 @@ import React from 'react';
 const SelectPlan = () => {
     return (
         <div className="list-group select-plan">
-            {{#each plans}}
+            {/*{{#each plans}}*/}
             <a href="#" className="list-group-item">
-                <input type="radio" name="selectPlan" id="selectPlan_{{name}}" value="{{name}}">
-                    {{capitalize name}}: {{limitString limit}} <span
-                    className="pull-right">{{amount.usd}} / {{interval}}</span>
+                <input type="radio" name="selectPlan" id="selectPlan_{{name}}" value="{{name}}"/>
+                    {{capitalize name}}: {{limitString limit}} <span className="pull-right">{{amount.usd}} / {{interval}}</span>
             </a>
-            {{ /each}}
+            {/*{{/each}}*/}
         </div>
     );
 };

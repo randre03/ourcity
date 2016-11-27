@@ -28,9 +28,9 @@ const Signup = () => {
 
                 <h4 className="page-header">Payment Information</h4>
                 <label>Which plan sounds <em>amazing</em>?</label>
-                {{ > selectPlan}}
+                {/*{{ > selectPlan}}*/}
                 <div className="form-group">
-                    {{ > Template.dynamic template="creditCard" data="signup"}}
+                    {/*{{ > Template.dynamic template="creditCard" data="signup"}}*/}
                 </div>
                 <div className="form-group">
                     <input type="submit" className="btn btn-success btn-block"
